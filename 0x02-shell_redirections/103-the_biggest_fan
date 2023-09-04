@@ -1,0 +1,2 @@
+#!/bin/bash
+cut -f 1 | sort | uniq -c | sort -nr | awk '{if(NR<=11) print $2}'
