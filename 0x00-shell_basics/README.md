@@ -1,6 +1,6 @@
 # Project 0x00. Shell Basics
 
-This project was carried out during my fullstack software engeneering training at [ALX Africa](https://www.alxafrica.com/) and aims to practive the basic commands related to the navigation snd file management in shell.
+This project was carried out during my full-stack software engineering training at [ALX Africa](https://www.alxafrica.com/) and aims to practice the basic commands related to navigation and file management in the shell.
 
 ## Technologies
 
@@ -9,7 +9,7 @@ This project was carried out during my fullstack software engeneering training a
 
 ## Files
 
-Each of the following line is a shell script file except school.mgc.
+Each of the following lines is a shell script file except school.mgc.
 
 | FILE | DESCRIPTION |
 | ----------- | ----------- |
