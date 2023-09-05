@@ -1,35 +1,67 @@
-# 0x02. Shell, I/O Redirections and filters
+# Project 0x02. Shell, I/O Redirections and filters
+Learning Objectives
+At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
-This project was carried out during my full-stack software engineering training at [ALX Africa](https://www.alxafrica.com/) and aims to practice the basic commands related to navigation and file management in the shell.
+Shell, I/O Redirection
+What do the commands head, tail, find, wc, sort, uniq, grep, tr do
+How to redirect standard output to a file
+How to get standard input from a file instead of the keyboard
+How to send the output from one program to the input of another program
+How to combine commands and filters with redirections
+Special Characters
+What are special characters
+Understand what do the white spaces, single quotes, double quotes, backslash, comment, pipe, command separator, tilde and how and when to use them
+Other Man Pages
+How to display a line of text
+How to concatenate files and print on the standard output
+How to reverse a string
+How to remove sections from each line of files
+What is the /etc/passwd file and what is its format
+What is the /etc/shadow file and what is its format
+Copyright - Plagiarism
+You are tasked to come up with solutions for the tasks below yourself to meet with the above learning objectives.
+You will not be able to meet the objectives of this or any following project by copying and pasting someone else’s work.
+You are not allowed to publish any content of this project.
+Any form of plagiarism is strictly forbidden and will result in removal from the program.
+Requirements
+General
+Allowed editors: vi, vim, emacs
+All your scripts will be tested on Ubuntu 20.04 LTS
+All your scripts should be exactly two lines long ($ wc -l file should print 2)
+All your files should end with a new line (why?)
+The first line of all your files should be exactly #!/bin/bash
+A README.md file, at the root of the folder of the project, describing what each script is doing
+You are not allowed to use backticks, &&, || or ;
+All your files must be executable
+You are not allowed to use sed or awk
+More Info
+Read your /etc/passwd and /etc/shadow files.
+
+Note: You do not have to learn about fmt, pr, du, gzip, tar, lpr, sed and awk yet.
 
 ## Technologies
-
 - Script written in bash
 - Tested on Ubuntu 20.4
-
+- 
 ## Files
-
-| FILE | DESCRIPTION |
+These files represent the different script files of the project and the description shows what the script does.
+| FILES | DESCRIPTION |
 | ----------- | ----------- |
-| `0-hello_world` | Write a script that prints “Hello, World”, followed by a new line to the standard output. |
-| [`1-listit`](https://github.com/RHEZUS/alx-system_engineering-devops/blob/master/0x00-shell_basics/1-listit) | Display the contents list of your current directory. |
-| [`2-bring_me_home`](https://github.com/RHEZUS/alx-system_engineering-devops/blob/master/0x00-shell_basics/2-bring_me_home) | Changes the working directory to the user’s home directory without using any shell variables. |
-| [`3-listfiles`](https://github.com/RHEZUS/alx-system_engineering-devops/blob/master/0x00-shell_basics/3-listfiles) |  Display current directory contents in a long format. |
-| [`4-listmorefiles`](https://github.com/RHEZUS/alx-system_engineering-devops/blob/master/0x00-shell_basics/4-listmorefiles) | Display current directory contents, including hidden files (starting with .). Use the long format. |
-| [`5-listfilesdigitonly`](https://github.com/RHEZUS/alx-system_engineering-devops/blob/master/0x00-shell_basics/5-listfilesdigitonly) |Display current directory contents in long format with user and group IDs displayed numerically And hidden files (starting with .). |
-| [`6-firstdirectory`](https://github.com/RHEZUS/alx-system_engineering-devops/blob/master/0x00-shell_basics/6-firstdirectory) | Creates a directory named *my_first_directory* in the */tmp/directory*. |
-| [`7-movethatfile`](https://github.com/RHEZUS/alx-system_engineering-devops/blob/master/0x00-shell_basics/7-movethatfile) | Move the file *betty* from */tmp/* to */tmp/my_first_directory*. |
-| [`8-firstdelete`](https://github.com/RHEZUS/alx-system_engineering-devops/blob/master/0x00-shell_basics/8-firstdelete) | Delete the file *betty* which is in */tmp/my_first_directory* |
-| [`9-firstdirdeletion`](https://github.com/RHEZUS/alx-system_engineering-devops/blob/master/0x00-shell_basics/9-firstdirdeletion) | Delete the directory *my_first_directory* that is in the */tmp* directory. |
-| [`10-back`](https://github.com/RHEZUS/alx-system_engineering-devops/blob/master/0x00-shell_basics/10-back) | Changes the working directory to the previous one. |
-| [`11-lists`](https://github.com/RHEZUS/alx-system_engineering-devops/blob/master/0x00-shell_basics/11-lists) | Lists all files (even ones with names beginning with a period character, which are normally hidden) in the current directory and the parent of the working directory and the */boot* directory (in this order), in long format. |
-| [`12-file_type`](https://github.com/RHEZUS/alx-system_engineering-devops/blob/master/0x00-shell_basics/12-file_type) | prints the type of the file named iamafile. The file *iamafile* will be in the */tmp* directory when we will run your script. |
-| [`13-symbolic_link`](https://github.com/RHEZUS/alx-system_engineering-devops/blob/master/0x00-shell_basics/13-symbolic_link) | Create a symbolic link to */bin/ls*, named *__ls__*. The symbolic link should be created in the current working directory. |
-| [`14-copy_html`](https://github.com/RHEZUS/alx-system_engineering-devops/blob/master/0x00-shell_basics/14-copy_html) | Create a script that copies all the HTML files from the current working directory to the parent of the working directory, but only copy files that did not exist in the parent of the working directory or were newer than the versions in the parent of the working directory. considering HTML files have the extension .html |
-| [`100-lets_move`](https://github.com/RHEZUS/alx-system_engineering-devops/blob/master/0x00-shell_basics/100-lets_move) |  moves all files beginning with an uppercase letter to the directory */tmp/u*. Assuming that the directory */tmp/u* will exist when we will run your script |
-| [`101-clean_emacs`](https://github.com/RHEZUS/alx-system_engineering-devops/blob/master/0x00-shell_basics/101-clean_emacs) | Create a script that deletes all files in the current working directory that end with the character `~`. |
-| [`102-tree`](https://github.com/RHEZUS/alx-system_engineering-devops/blob/master/0x00-shell_basics/102-tree) | creates the directories *welcome/*, *welcome/to/ and welcome/to/school* in the current directory. You are only allowed to use two spaces (and lines) in your script, not more. |
-| [`103-commas`](https://github.com/RHEZUS/alx-system_engineering-devops/blob/master/0x00-shell_basics/103-commas) | lists all the files and directories of the current directory, separated by commas (,). The file should end with a (`/`), Files startin with a `.` should slso be listed, The listing should be alpha ordered, except for the directories `.` and `..` which should be listed at the very beginning, Only digits and letters are used to sort; Digits should come first You can assume that all the files we will test with will have at least one letter or one digit, The listing should end with a new line |
-| [`school.mgc`](https://github.com/RHEZUS/alx-system_engineering-devops/blob/master/0x00-shell_basics/school.mgc) | school.mgc is a magic file that can be used with the command file to detect School data files. School data files always contain the string SCHOOL at offset 0. |
-
-
+| [`0-iam_betty`] | switches the current user to the user betty. The script should be a maximum of 8 characters and we assume the user *betty* exists. |
+| [`1-who_am_i`] | Prints the effective username of the current user. |
+| [`2-groups`]| Prints all the groups the current user is part of. |
+| [`3-new_owner`] | Changes the owner of the file *hello* to the user **betty** |
+| [`4-empty`]| Creates an empty file called *hello* |
+| [`5-execute`] | Add execute permission to the owner of the file *hello* which is in the current directory |
+| [`6-multiple_permissions`] | adds execute permission to the owner and the group owner, and read permission to other users, to the file *hello* in the working directory |
+| [`7-everybody`] | Add execution permission to the owner, the group owner, and the other users, to the file *hello* which is in the working directory without using a comma in the script |
+| [`8-James_Bond`] | sets the permission to the file *hello* as follows:  - Owner: No permission at all - Group: no permission at all - Other users: all the permissions |
+| [`9-John_Doe`] | Set the mode of the file  *hello* which is in the working directory to this `- rwxr-x-wx 1 julien julien 23 Sep 20 14:25 hello`  without using a comma in the script |
+| [`10-mirror_permissions`] | Sets the mode of the file *hello* the same as *olleh’s* mode. Both files  are in the working directory. |
+| [`11-directories_permissions`] | Add execute permission to all subdirectories of the current directory for the owner, the group owner, and all other users without changing regular files |
+| [`12-directory_permissions`] | Creates a directory called *my_dir* with permissions 751 in the working directory. |
+| [`13-change_group`]| changes the group owner to school for the file *hello* which is in the working directory |
+| [`100-change_owner_and_group`] | Change the owner to `vincent` and the group owner to `staff` for all the files and directories in the working directory. |
+| [`101-symbolic_link_permissions`] | Change the owner and the group owner of the symbolic link *_hello* in the working directory to `vincent` and `staff` respectively. |
+| [`102-if_only`] | Change the owner of the file *hello* to `betty` only if it is owned by the user `guillaume`. the file is in the current directory.|
+| [`103-Star_Wars`] | Play the StarWars IV episode in the terminal. |
