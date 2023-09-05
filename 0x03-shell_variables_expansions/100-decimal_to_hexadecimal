@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "%X\n" "$NUM"
+read -p NUM; printf "%X\n" "$NUM"
