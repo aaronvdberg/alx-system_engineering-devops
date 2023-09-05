@@ -41,9 +41,9 @@ Note: You do not have to learn about fmt, pr, du, gzip, tar, lpr, sed and awk ye
 These files represent the different script files of the project and the description shows what the script does.
 | FILES | DESCRIPTION |
 | ----------- | ----------- |
-| [`0-iam_betty`] | switches the current user to the user betty. The script should be a maximum of 8 characters and we assume the user *betty* exists. |
-| [`1-who_am_i`] | Prints the effective username of the current user. |
-| [`2-groups`]| Prints all the groups the current user is part of. |
+| [`0. Hello World`] | Write a script that prints “Hello, World”, followed by a new line to the standard output. |
+| [`1. Confused smiley`] | Write a script that displays a confused smiley "(Ôo)'. |
+| [`2. Let's display a file`]| Prints all the groups the current user is part of. |
 | [`3-new_owner`] | Changes the owner of the file *hello* to the user **betty** |
 | [`4-empty`]| Creates an empty file called *hello* |
 | [`5-execute`] | Add execute permission to the owner of the file *hello* which is in the current directory |
