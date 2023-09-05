@@ -11,7 +11,7 @@ This project was carried out during my full-stack software engineering training 
 
 | FILE | DESCRIPTION |
 | ----------- | ----------- |
-| [`0-hello_world`] | Write a script that prints “Hello, World”, followed by a new line to the standard output. |
+| `0-hello_world` | Write a script that prints “Hello, World”, followed by a new line to the standard output. |
 | [`1-listit`](https://github.com/RHEZUS/alx-system_engineering-devops/blob/master/0x00-shell_basics/1-listit) | Display the contents list of your current directory. |
 | [`2-bring_me_home`](https://github.com/RHEZUS/alx-system_engineering-devops/blob/master/0x00-shell_basics/2-bring_me_home) | Changes the working directory to the user’s home directory without using any shell variables. |
 | [`3-listfiles`](https://github.com/RHEZUS/alx-system_engineering-devops/blob/master/0x00-shell_basics/3-listfiles) |  Display current directory contents in a long format. |
