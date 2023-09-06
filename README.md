@@ -17,5 +17,5 @@ Each of the following line is a folder which represents a project done during th
 
 | PROJECT | DESCRIPTION |
 | ----------- | ----------- |
-| [`0x00-shell_basics`](https://github.com/RHEZUS/alx-system_engineering-devops/tree/master/0x00-shell_basics). | Aims to learn basic shell commands related to files and directories management operation like create, rename, move... |
-| [`0x01-shell_permissions`](https://github.com/RHEZUS/alx-system_engineering-devops/tree/master/0x01-shell_permissions). | This project aims to practice ownership and related commands like chmod, chown, su, adduser... and thier different uptions. |
+| [`0x00-shell_basics`]. | Aims to learn basic shell commands related to files and directories management operation like create, rename, move... |
+| [`0x01-shell_permissions`]. | This project aims to practice ownership and related commands like chmod, chown, su, adduser... and thier different uptions. |
